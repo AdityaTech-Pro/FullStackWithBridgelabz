@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* improve table appearance */
+        
+        table.center {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 1100px;
+        }
+        
+        table.center th,
+        table.center td {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 15px;
+            vertical-align: middle;
+            min-width: 130px;
+        }
+        
+        table.center th {
+            background: #f5f5f5;
+        }
+        /* small icon class for action images */
+        
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+        /* circular avatar placeholder that can contain an image */
+        
+        .avatar {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgb(139, 139, 234);
+            margin-right: 8px;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+        
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        /* small status dot to show approval, pending, etc. */
+        
+        .status-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #2ecc71;
+            /* green = approved */
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<title>
+    <h2>Welcome to My Web Page</h2>
+</title>
+
+<body>
+    <table border="4" cellspacing="1" cellpadding="4" class="center">
+        <h1 class="center">Data List</h1>
+        <tr>
+            <th>Company</th>
+            <th>Status</th>
+            <th>Joined</th>
+            <th>Emp. Size</th>
+            <th>Location</th>
+            <th>Contact</th>
+            <th>Billing</th>
+            <th>Edit</th>
+        </tr>
+
+        <tr>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Crazyheads</th>
+            <th><span class="status-dot"></span>Approved</th>
+            <th>May 11</th>
+            <th>11 - 50</th>
+            <th>Sunnyvale</th>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Angel swift</th>
+            <th>$20,863</th>
+            <th>
+                <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+            </th>
+        </tr>
+
+        <tr>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>ChurkasData</th>
+            <th><span class="status-dot"></span>Awaiting approv ...</th>
+            <th>Apr '13</th>
+            <th>201 - 500</th>
+            <th> Silicon Va ...</th>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Ronald Kepler</th>
+            <th>$56,892</th>
+            <th>
+                <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+            </th>
+        </tr>
+
+        <tr>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Onhovered row</th>
+            <th><span class="status-dot"></span>No status</th>
+            <th>Apr '13</th>
+            <th>1 - 10</th>
+            <th>San Francisco</th>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Michele Penisboro</th>
+            <th>$5,843</th>
+            <th>
+                <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+            </th>
+        </tr>
+
+        <tr>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Jopka Telecom</th>
+            <th><span class="status-dot"></span>Approved</th>
+            <th>Jan '13</th>
+            <th>1 - 10</th>
+            <th>San Francisco</th>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Adam Shwest</th>
+            <th>$2,047</th>
+            <th>
+                <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+            </th>
+        </tr>
+
+        <tr>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Setproduct</th>
+            <th><span class="status-dot"></span>Rejected</th>
+            <th>Aug '13</th>
+            <th>11 - 50</th>
+            <th>Palo Alto</th>
+            <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Natalie Ruffus</th>
+            <th>$11,692</th>
+            <th>
+                <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+            </th>
+
+            <tr>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Dutka Incorporated</th>
+                <th><span class="status-dot"></span>Approved</th>
+                <th>Nov '14</th>
+                <th>201 - 500</th>
+                <th>Sunnyvale</th>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Angel swift</th>
+                <th>$20,863</th>
+                <th>
+                    <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+                </th>
+            </tr>
+
+            <tr>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Crazyheads</th>
+                <th><span class="status-dot"></span>Approved</th>
+                <th>May 11</th>
+                <th>11 - 50</th>
+                <th>Sunnyvale</th>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Angel swift</th>
+                <th>$20,863</th>
+                <th>
+                    <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+                </th>
+            </tr>
+
+            <tr>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Crazyheads</th>
+                <th><span class="status-dot"></span>Approved</th>
+                <th>May 11</th>
+                <th>11 - 50</th>
+                <th>Sunnyvale</th>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Angel swift</th>
+                <th>$20,863</th>
+                <th>
+                    <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+                </th>
+            </tr>
+
+            <tr>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Crazyheads</th>
+                <th><span class="status-dot"></span>Approved</th>
+                <th>May 11</th>
+                <th>11 - 50</th>
+                <th>Sunnyvale</th>
+                <th><span class="avatar" id="avatar-crazyheads" title="Add logo"></span>Angel swift</th>
+                <th>$20,863</th>
+                <th>
+                    <img class="icon " src="https://www.svgrepo.com/show/325130/edit-pencil.svg " alt="Edit ">
+                </th>
+            </tr>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
