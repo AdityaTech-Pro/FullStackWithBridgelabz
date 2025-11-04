@@ -1,0 +1,89 @@
+<!doctype html>
+<!--
+  Complete Mini User Interface Layout
+  - Semantic HTML5 structure: header, main, section, footer
+  - Compact card with a form, buttons and a small inline SVG image (data URI)
+  - Linked to styles.css (no JS or external frameworks)
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini UI Card — Responsive Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo">Mini UI</h1>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <!-- Main content card -->
+            <section class="card" aria-labelledby="card-title">
+                <div class="card-grid">
+                    <!-- Form column -->
+                    <div class="card-panel card-form">
+                        <h2 id="card-title">Quick Signup</h2>
+                        <p class="muted">Join in two steps — we keep it simple and private.</p>
+
+                        <form class="form" novalidate>
+                            <label for="name">Full name</label>
+                            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+                            <label for="password">Password</label>
+                            <input id="password" name="password" type="password" placeholder="Choose a secure password" required minlength="6" />
+
+                            <div class="button-row">
+                                <button type="submit" class="btn btn-primary">Create account</button>
+                                <button type="reset" class="btn btn-secondary">Reset</button>
+                            </div>
+                        </form>
+
+                        <div class="small-actions">
+                            <button class="btn btn-ghost" type="button">Learn more</button>
+                            <a class="help-link" href="#">Need help?</a>
+                        </div>
+                    </div>
+
+                    <!-- Image / visual column -->
+                    <aside class="card-panel card-media" aria-hidden="true">
+                        <!-- Small inline SVG avatar as data URI to avoid external requests -->
+                        <img src="data:image/svg+xml;utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='280'%20height='280'%20viewBox='0%200%20280%20280'%3E%3Cdefs%3E%3ClinearGradient%20id='g'%20x1='0'%20x2='1'%20y1='0'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%232b6cb0'/%3E%3Cstop%20offset='1'%20stop-color='%23008a74'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width='100%25'%20height='100%25'%20fill='url(%23g)'%20rx='20'/%3E%3Ccircle%20cx='140'%20cy='110'%20r='36'%20fill='%23fff'/%3E%3Crect%20x='96'%20y='156'%20width='88'%20height='22'%20fill='%23fff'%20rx='6'/%3E%3C/svg%3E"
+                            alt="Decorative avatar" width="220" height="220" class="avatar" />
+
+                        <p class="media-caption">Friendly, lightweight UI designed with accessibility and performance in mind.</p>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <time datetime="2025">2025</time> Mini UI — Built with semantic HTML & CSS</p>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
