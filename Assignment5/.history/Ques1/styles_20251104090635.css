@@ -1,0 +1,212 @@
+/* Base and layout ---------------------------------------------------------- */
+:root {
+  --bg: #0f1724; /* deep bluish background */
+  --card: #0b1220; /* slightly darker card */
+  --accent: #ffd166; /* warm accent for highlights */
+  --text: #e6eef8; /* light text for high contrast */
+}
+
+/* Make body a column flex container so footer can be pushed to bottom.
+   min-height uses viewport height (vh) to ensure page fills the screen. */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* uses vh unit */
+  line-height: 1.5;
+  font-size: 16px; /* base size in px */
+}
+
+/* Utility container to center content and constrain width.
+   max-width uses px; horizontal padding uses rem for scalability. */
+.container {
+  max-width: 1000px; /* px */
+  margin: 0 auto;
+  padding: 1.5rem; /* rem */
+}
+
+/* Header: fixed to top so it stays visible while scrolling.
+   Use px for explicit header height and rem for inner spacing. */
+.site-header {
+  position: fixed; /* requirement: fixed header */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px; /* px */
+  background: linear-gradient(90deg, #071428, #0b2438);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25em; /* em */
+}
+
+.site-title {
+  font-size: 1.125rem; /* rem (relative to base) */
+  margin: 0;
+  padding-left: 0.25rem;
+  color: var(--accent);
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.75rem; /* em */
+  margin: 0;
+  padding: 0;
+}
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.4rem 0.6rem; /* uses rem for vertical rhythm */
+  border-radius: 6px; /* px */
+  font-size: 0.95rem; /* rem */
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  background: rgba(255,209,102,0.08);
+  color: var(--accent);
+}
+
+/* Header actions: social links and theme toggle button */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* em-like spacing */
+}
+.social-link {
+  color: var(--text);
+  background: transparent;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem; /* rem */
+  border-radius: 6px;
+  font-size: 0.875rem; /* rem */
+  border: 1px solid transparent;
+}
+.social-link:hover,
+.social-link:focus {
+  background: rgba(255,255,255,0.04);
+  color: var(--accent);
+  border-color: rgba(255,209,102,0.12);
+}
+
+.theme-toggle {
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 0.35rem 0.6rem; /* rem */
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem; /* rem */
+}
+.theme-toggle:hover,
+.theme-toggle:focus {
+  outline: none;
+  background: rgba(255,255,255,0.06);
+}
+
+/* Main: add top padding equal to header height so content isn't hidden
+   behind the fixed header. We use calc with px and rem to demonstrate units. */
+.site-main {
+  flex: 1 0 auto;
+  padding-top: calc(64px + 1rem); /* px + rem */
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* rem */
+  padding: 2rem 0; /* rem */
+}
+
+/* Profile image: use percentage for width so it scales within the intro area.
+   Add rem-based border-radius for consistent rounding. */
+.profile-img {
+  width: 28%; /* % unit */
+  max-width: 240px; /* px fallback */
+  height: auto;
+  border-radius: 0.75rem; /* rem */
+  border: 3px solid rgba(255,209,102,0.12);
+  box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+}
+
+.bio h2 {
+  margin-top: 0;
+  font-size: 1.5rem; /* rem */
+}
+.bio p {
+  margin: 0.5rem 0 0; /* px and rem combo implicitly */
+  color: #cfe6ff;
+}
+
+.contact {
+  margin-top: 3vh; /* uses vh to add vertical spacing relative to viewport */
+  padding-bottom: 2rem;
+}
+
+/* Footer: use flexbox layout inside and make it visually distinct.
+   The footer is kept at the bottom because body is a column flex container
+   and main has flex:1 so footer naturally sits at the bottom. */
+.site-footer {
+  background: var(--card);
+  padding: 0.9rem 0; /* rem */
+  border-top: 1px solid rgba(255,255,255,0.03);
+  color: #9fb6d8;
+}
+.footer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem; /* rem */
+}
+
+/* Responsive tweaks: stack image above bio on narrow screens. */
+@media (max-width: 720px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-img {
+    width: 40%;
+  }
+  .site-nav ul {
+    gap: 0.5rem;
+  }
+}
+
+/* Small accessibility tweak: ensure focus outlines are visible */
+a:focus {
+  outline: 3px solid rgba(255,209,102,0.18);
+  outline-offset: 3px;
+}
+
+/* Light theme overrides: toggled by adding .light-theme to <body> */
+.light-theme {
+  --bg: #f6f9fc; /* very light background */
+  --card: #ffffff;
+  --accent: #0b66ff; /* blue accent for links/buttons */
+  --text: #0b1220; /* dark text for contrast */
+}
+
+/* Ensure header/footer contrast in light mode */
+.light-theme .site-header {
+  background: linear-gradient(90deg, #ffffff, #f1f6fb);
+  border-bottom-color: rgba(11,18,32,0.06);
+}
+.light-theme .site-footer {
+  background: #f8fafc;
+  color: #234057;
+}
+

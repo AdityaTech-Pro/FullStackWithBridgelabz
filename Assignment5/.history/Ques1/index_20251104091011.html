@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aditya Verma — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="site-title">Aditya Verma</h1>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header actions: social links and theme toggle -->
+            <div class="header-actions">
+                <a class="social-link" href="https://github.com/AdityaTech-Pro" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    GitHub
+                </a>
+                <a class="social-link" href="https://www.linkedin.com/in/aditya-verma-2a3915289/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    LinkedIn
+                </a>
+
+                <!-- Theme toggle: toggles light/dark theme and persists choice -->
+                <button id="theme-toggle" class="theme-toggle" aria-pressed="false" title="Toggle light/dark theme">
+                    Light
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="home" class="site-main">
+        <section id="about" class="intro container">
+            <img src="https://via.placeholder.com/240" alt="Profile photo of Aditya Verma" class="profile-img" />
+            <div class="bio">
+                <h2>Hi, I'm Aditya</h2>
+                <p>
+                    I'm a full-stack developer who loves building clean, accessible web interfaces. I focus on semantic HTML, responsive CSS, and small, maintainable code. This page demonstrates a fixed header, a responsive profile image, and a footer that sticks to the
+                    bottom.
+                </p>
+                <p>
+                    Favorite tools: DSA, Java, C++ , React , HTML, CSS, Java Script, Mongo DB, OOP’s, DBMS, OS . I enjoy learning new patterns and improving performance and accessibility.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="container contact">
+            <h3>Contact</h3>
+            <p>
+                You can reach me at <a href="mailto:aditya.verma3_cs23@gla.ac.in">aditya.verma3_cs23@gla.ac.in</a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2025</span> Aditya Verma — Built with semantic HTML &amp; CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle: persist choice in localStorage and update UI
+        (function() {
+            const btn = document.getElementById('theme-toggle');
+            const body = document.body;
+            const stored = localStorage.getItem('theme');
+
+            function applyTheme(theme) {
+                if (theme === 'light') {
+                    body.classList.add('light-theme');
+                    btn.textContent = 'Dark';
+                    btn.setAttribute('aria-pressed', 'true');
+                } else {
+                    body.classList.remove('light-theme');
+                    btn.textContent = 'Light';
+                    btn.setAttribute('aria-pressed', 'false');
+                }
+            }
+
+            // Initialize from storage (default: dark)
+            applyTheme(stored === 'light' ? 'light' : 'dark');
+
+            btn.addEventListener('click', function() {
+                const isLight = body.classList.toggle('light-theme');
+                localStorage.setItem('theme', isLight ? 'light' : 'dark');
+                applyTheme(isLight ? 'light' : 'dark');
+            });
+        })();
+    </script>
+</body>
+
+</html>
