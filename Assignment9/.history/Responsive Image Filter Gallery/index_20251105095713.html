@@ -1,0 +1,72 @@
+<!doctype html>
+<!-- Responsive Image Filter Gallery
+     - Semantic HTML5 structure
+     - Six images displayed in a responsive CSS Grid
+     - Each image demonstrates a different CSS filter
+     - Hover removes the filter with a smooth transition
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Image Filter Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Responsive Image Filter Gallery</h1>
+      <p class="lead">Six images demonstrating different CSS filters. Hover any image to reveal the original.
+      No JavaScript used — purely semantic HTML and CSS Grid.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="container gallery-section" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading" class="sr-only">Image Filters</h2>
+
+      <!-- Gallery grid: uses CSS Grid with auto-fit / minmax as requested -->
+      <section class="gallery" aria-label="Image filter gallery">
+
+        <figure class="card blur">
+          <img src="https://picsum.photos/id/1015/800/600" alt="Foggy mountain lake" loading="lazy">
+          <figcaption>Blur</figcaption>
+        </figure>
+
+        <figure class="card grayscale">
+          <img src="https://picsum.photos/id/1025/800/600" alt="A playful dog running" loading="lazy">
+          <figcaption>Grayscale</figcaption>
+        </figure>
+
+        <figure class="card sepia">
+          <img src="https://picsum.photos/id/1003/800/600" alt="Seashore with rocks" loading="lazy">
+          <figcaption>Sepia</figcaption>
+        </figure>
+
+        <figure class="card brightness">
+          <img src="https://picsum.photos/id/1005/800/600" alt="Open road leading into hills" loading="lazy">
+          <figcaption>Brightness</figcaption>
+        </figure>
+
+        <figure class="card contrast">
+          <img src="https://picsum.photos/id/1011/800/600" alt="Forest canopy from below" loading="lazy">
+          <figcaption>Contrast</figcaption>
+        </figure>
+
+        <figure class="card hue">
+          <img src="https://picsum.photos/id/1020/800/600" alt="City skyline at dusk" loading="lazy">
+          <figcaption>Hue Rotate</figcaption>
+        </figure>
+
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with semantic HTML5 and CSS Grid • Hover images to remove filters.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
