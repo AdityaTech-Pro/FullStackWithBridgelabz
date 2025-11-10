@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Typography Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <section class="typography-demo">
+                <h1>Responsive Typography with Modern CSS</h1>
+                <p class="subtitle">Using clamp() and relative units for fluid scaling</p>
+                
+                <div class="text-content">
+                    <p class="main-text">
+                        Typography is the art and technique of arranging type to make written language legible, readable, and appealing when displayed. 
+                        The arrangement of type involves selecting typefaces, point sizes, line lengths, line-spacing, and letter-spacing, and adjusting 
+                        the space between pairs of letters.
+                    </p>
+                    
+                    <p class="main-text">
+                        In the modern web, responsive typography is crucial. It ensures text remains readable across all device sizes without the need 
+                        for breakpoints. The clamp() function, combined with viewport units, creates fluid typography that scales smoothly between 
+                        minimum and maximum sizes.
+                    </p>
+                </div>
+
+                <div class="demo-box">
+                    <h2>CSS Example</h2>
+                    <pre><code>h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+}</code></pre>
+                </div>
+
+                <div class="features">
+                    <div class="feature">
+                        <h3>Fluid Scaling</h3>
+                        <p>Text that automatically adjusts to viewport width</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Minimum Size</h3>
+                        <p>Preserves readability on small screens</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Maximum Size</h3>
+                        <p>Prevents text from becoming too large</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

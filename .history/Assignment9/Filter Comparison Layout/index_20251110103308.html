@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Comparison Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Filter Comparison</h1>
+            <p class="subtitle">Hover over the filtered image to see the original</p>
+        </header>
+
+        <main class="comparison-wrapper">
+            <div class="image-container original">
+                <img src="https://images.unsplash.com/photo-1696446702239-75e13f6e907b" 
+                     alt="Original landscape image"
+                     loading="lazy">
+                <p class="caption">Original Image</p>
+            </div>
+
+            <div class="image-container filtered">
+                <img src="https://images.unsplash.com/photo-1696446702239-75e13f6e907b" 
+                     alt="Filtered landscape image"
+                     loading="lazy">
+                <p class="caption">Filtered Image (Increased Contrast)</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Hover or tap on the filtered image to see the difference</p>
+            <p class="note">Images are for demonstration purposes only</p>
+        </footer>
+    </div>
+</body>
+</html>

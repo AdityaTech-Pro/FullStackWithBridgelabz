@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="header-right">
+            <div class="user-info">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-user-circle"></i>
+                <span>John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-item active">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Analytics</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Users</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-question-circle"></i>
+                <span>Help</span>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="content-box statistics">
+                <h2>Statistics</h2>
+                <div class="stat-grid">
+                    <div class="stat-item">
+                        <h3>Total Users</h3>
+                        <p>1,234</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Revenue</h3>
+                        <p>$45,678</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Orders</h3>
+                        <p>892</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Growth</h3>
+                        <p>+23%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-box recent-activity">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <i class="fas fa-user-plus"></i>
+                        <div class="activity-details">
+                            <p>New user registered</p>
+                            <small>5 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="activity-details">
+                            <p>New order received</p>
+                            <small>15 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <i class="fas fa-comment"></i>
+                        <div class="activity-details">
+                            <p>New comment on post</p>
+                            <small>30 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

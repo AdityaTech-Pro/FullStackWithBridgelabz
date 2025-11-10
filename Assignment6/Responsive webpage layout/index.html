@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Layout (Flex + Grid)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">Brand<span class="accent">Co</span></div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="layout-grid">
+            <!-- Article column -->
+            <article class="article">
+                <h1 class="hero-title">Crafting thoughtful experiences</h1>
+
+                <div class="article-boxes">
+                    <section class="box">
+                        <h2>Design</h2>
+                        <p>We focus on user-centered design and clear communication.</p>
+                    </section>
+
+                    <section class="box">
+                        <h2>Development</h2>
+                        <p>Scalable front-end and back-end solutions using modern tools.</p>
+                    </section>
+
+                    <section class="box animate-box">
+                        <h2>Delivery</h2>
+                        <p>Reliable delivery and continuous support to ensure success.</p>
+                    </section>
+                </div>
+
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+            </article>
+
+            <!-- Sidebar column -->
+            <aside class="sidebar">
+                <div class="card">
+                    <h3>About</h3>
+                    <p>Short info about the site or author. Use this area for secondary content.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 BrandCo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

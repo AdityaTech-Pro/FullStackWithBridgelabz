@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fixed Navbar, Sidebar & Footer Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">My Site</div>
+        <nav class="top-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Search form placed between nav and profile -->
+        <form class="nav-search" role="search" action="#" method="get">
+            <label for="nav-search-input" class="sr-only">Search</label>
+            <input id="nav-search-input" type="search" name="q" placeholder="Search" aria-label="Search" />
+        </form>
+
+        <!-- Profile circle (initials shown if no image) -->
+        <button class="profile" title="User menu" aria-label="User menu">AV</button>
+    </header>
+
+    <aside class="sidebar-left" aria-label="Primary sidebar">
+        <div class="sidebar-inner">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="content-inner">
+            <h1>Welcome</h1>
+            <p>This is a layout with a fixed top navbar, a fixed left sidebar (25%) and a flexible right content area (75%). The footer is fixed to the bottom.</p>
+
+            <section>
+                <h2>Content area</h2>
+                <p>Scroll this area to see that the sidebar and header/footer remain fixed. The main content is independent and responsive.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id diam orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vitae ligula et eros volutpat pharetra. Morbi non urna
+                    nec orci pharetra pulvinar. Curabitur cursus nibh et nibh dictum, vitae facilisis tortor vulputate. Praesent vitae risus a leo laoreet rhoncus. Cras et lectus vitae sapien posuere lobortis. Integer dictum justo sit amet orci dictum,
+                    sed posuere sapien faucibus.</p>
+                <p>Repeat blocks to allow scrolling:</p>
+                <div class="filler">
+                    <p>More content...</p>
+                    <p>More content...</p>
+                    <p>More content...</p>
+                    <p>More content...</p>
+                    <p>More content...</p>
+                    <p>More content...</p>
+                    <p>More content...</p>
+                    <p>More content...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div>My Website |© 2025 My Site · All rights reserved</div>
+    </footer>
+</body>
+
+</html>

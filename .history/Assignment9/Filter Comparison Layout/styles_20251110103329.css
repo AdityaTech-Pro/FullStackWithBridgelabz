@@ -1,0 +1,146 @@
+/* Base styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Comparison layout */
+.comparison-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 500px;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styles */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Caption styles */
+.caption {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Filter styles */
+.filtered img {
+    filter: contrast(150%) brightness(110%);
+    transition: filter 0.5s ease;
+}
+
+.filtered:hover img {
+    filter: contrast(100%) brightness(100%);
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    color: #666;
+    margin-top: 2rem;
+}
+
+.note {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #999;
+}
+
+/* Responsive design */
+@media screen and (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+
+    .comparison-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .caption {
+        font-size: 1rem;
+    }
+
+    footer {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Loading animation */
+@keyframes imageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-container {
+    animation: imageFadeIn 0.5s ease-out forwards;
+}
+
+.image-container:nth-child(2) {
+    animation-delay: 0.2s;
+}

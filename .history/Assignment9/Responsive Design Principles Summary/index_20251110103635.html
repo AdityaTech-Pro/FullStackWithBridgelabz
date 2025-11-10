@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Core Principles of Responsive Design</h1>
+            <p class="subtitle">Hover over each box to explore the concepts</p>
+        </header>
+
+        <main class="principles-grid">
+            <article class="principle-box fluid-layouts">
+                <h2>Fluid Layouts</h2>
+                <div class="content">
+                    <p class="definition">
+                        Layouts that use relative units (%, vw, vh) instead of fixed pixels, allowing content to naturally adapt to different screen sizes.
+                    </p>
+                    <div class="code-example">
+                        <pre><code>.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.column {
+    width: 33.333%;
+    padding: 1rem;
+}</code></pre>
+                    </div>
+                </div>
+            </article>
+
+            <article class="principle-box flexible-media">
+                <h2>Flexible Media</h2>
+                <div class="content">
+                    <p class="definition">
+                        Images, videos, and other media that scale within their containing elements while maintaining aspect ratios.
+                    </p>
+                    <div class="code-example">
+                        <pre><code>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+}</code></pre>
+                    </div>
+                </div>
+            </article>
+
+            <article class="principle-box breakpoints">
+                <h2>Breakpoints</h2>
+                <div class="content">
+                    <p class="definition">
+                        Strategic points where your site's content will respond and adapt to provide the best user experience.
+                    </p>
+                    <div class="code-example">
+                        <pre><code>@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav {
+        display: flex;
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>💡 Pro tip: Use these principles together for the best responsive design implementation</p>
+        </footer>
+    </div>
+</body>
+
+</html>
