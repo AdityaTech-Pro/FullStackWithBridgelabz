@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BrightStart — Innovative Startup</title>
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-" crossorigin="anonymous">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Full-width header with navbar -->
+    <header class="bg-light border-bottom">
+        <div class="container-fluid">
+            <!-- Navbar: .navbar expands across the top; using container to center content -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand name -->
+                    <a class="navbar-brand fw-bold" href="#">BrightStart</a>
+                    <!-- Toggler for small screens (requires Bootstrap JS bundle) -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <!-- ms-auto pushes links to the right -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero section: demonstrates .container, .row, .col usage -->
+        <section class="hero py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Left column: heading, subtitle, CTA -->
+                    <div class="col-12 col-md-7">
+                        <h1 class="display-5 fw-bold">Build better products faster with BrightStart</h1>
+                        <p class="lead text-muted">We provide intuitive tools and expert guidance to help early-stage teams validate ideas, ship quickly, and grow sustainably.</p>
+                        <!-- btn-primary uses Bootstrap button styling; btn-lg makes it more prominent -->
+                        <p class="mt-4">
+                            <a class="btn btn-primary btn-lg me-2" href="#features">Get Started</a>
+                            <a class="btn btn-outline-secondary btn-lg" href="#contact">Contact Sales</a>
+                        </p>
+                        <!-- Small proof line using Bootstrap text utilities -->
+                        <p class="small text-muted mt-3">Trusted by teams at dozens of startups and agencies.</p>
+                    </div>
+
+                    <!-- Right column: illustrative image (responsive) -->
+                    <div class="col-12 col-md-5 mt-4 mt-md-0 text-center">
+                        <!-- img-fluid makes the image scale with column width -->
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee9813?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Team collaboration" class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features section: using container and grid columns -->
+        <section id="features" class="py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="h3">What we offer</h2>
+                        <p class="text-muted">Small, focused tools that integrate with your workflow.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100 border rounded">
+                            <h3 class="h5">Rapid Prototyping</h3>
+                            <p class="text-muted">Turn ideas into clickable prototypes in hours — not weeks.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100 border rounded">
+                            <h3 class="h5">User Feedback</h3>
+                            <p class="text-muted">Collect actionable feedback with built-in moderated user sessions.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 h-100 border rounded">
+                            <h3 class="h5">Analytics</h3>
+                            <p class="text-muted">Understand real usage and conversion funnels without vendor lock-in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple callout using utilities -->
+        <section class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h3 class="mb-3">Ready to try BrightStart?</h3>
+                <p class="mb-4">Start a free 14-day trial — no credit card required.</p>
+                <a class="btn btn-light btn-lg" href="#">Start Free Trial</a>
+            </div>
+        </section>
+
+        <!-- Placeholder pricing section to show responsive grid -->
+        <section id="pricing" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4">
+                        <h2 class="h3">Simple pricing</h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border rounded text-center">
+                            <h4 class="h5">Starter</h4>
+                            <p class="display-6 fw-bold mb-2">$0</p>
+                            <p class="text-muted">For individuals testing ideas.</p>
+                            <a class="btn btn-outline-primary" href="#">Choose</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border rounded text-center">
+                            <h4 class="h5">Team</h4>
+                            <p class="display-6 fw-bold mb-2">$29</p>
+                            <p class="text-muted">Everything teams need to ship.</p>
+                            <a class="btn btn-primary" href="#">Choose</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="p-4 border rounded text-center">
+                            <h4 class="h5">Enterprise</h4>
+                            <p class="display-6 fw-bold mb-2">Contact</p>
+                            <p class="text-muted">Custom solutions and support.</p>
+                            <a class="btn btn-outline-primary" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer with semantic footer tag -->
+    <footer id="contact" class="bg-light py-4 border-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <p class="mb-0 small">© 2025 BrightStart Inc. — 123 Startup Way, San Francisco, CA</p>
+                </div>
+                <div class="col-12 col-md-6 text-md-end mt-2 mt-md-0">
+                    <a href="#" class="text-decoration-none me-3 small">Privacy</a>
+                    <a href="#" class="text-decoration-none small">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle (includes Popper) to support components like navbar collapse -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-" crossorigin="anonymous"></script>
+</body>
+
+</html>

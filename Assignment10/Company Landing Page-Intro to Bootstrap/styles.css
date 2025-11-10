@@ -1,0 +1,30 @@
+/* styles.css - custom styles for the BrightStart landing page */
+
+/* Hero styling: subtle gradient and extra padding */
+.hero {
+  background: linear-gradient(180deg, rgba(246,247,250,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+/* Make images look polished */
+.img-fluid {
+  max-width: 100%;
+  height: auto; /* keeps aspect ratio */
+}
+
+/* Small responsive tweak: center text on very small screens */
+@media (max-width: 575.98px) {
+  .hero .display-5 {
+    font-size: 1.6rem; /* slightly smaller on very small screens */
+  }
+}
+
+/* Footer small text color tweak */
+footer a { color: #495057; }
+
+/* Accessibility: increase focus outline for keyboard users */
+a:focus {
+  outline: 3px dashed rgba(13,110,253,0.25);
+  outline-offset: 2px;
+}
+
+/* End of custom styles */
