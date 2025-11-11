@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 36px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 40px;
+            color: white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 250px;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+        }
+        
+        .project-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .project-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .project-card p {
+            font-size: 14px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        .project-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: white;
+            color: #667eea;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover .project-link {
+            background: #f0f0f0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀 JavaScript Assignment Projects</h1>
+        <p class="subtitle">Interactive Financial & E-Commerce Calculators</p>
+
+        <div class="projects-grid">
+            <a href="Banking Interest Calculator/index.html" class="project-card">
+                <div class="project-icon">🏦</div>
+                <h2>Banking Interest Calculator</h2>
+                <p>Calculate compound interest for savings accounts and fixed deposits with bonus rates</p>
+                <span class="project-link">Open Project →</span>
+            </a>
+
+            <a href="E-Commerce Delivery Estimator/index.html" class="project-card">
+                <div class="project-icon">🚚</div>
+                <h2>E-Commerce Delivery Estimator</h2>
+                <p>Estimate delivery costs and time based on order amount, membership, and location</p>
+                <span class="project-link">Open Project →</span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

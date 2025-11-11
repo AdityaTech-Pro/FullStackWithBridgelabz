@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Banking Interest Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .form-group {
+            margin-bottom: 24px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        input,
+        select {
+            width: 100%;
+            padding: 12px 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        input:hover,
+        select:hover {
+            border-color: #667eea;
+        }
+        
+        button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        button:active {
+            transform: translateY(-1px);
+        }
+        
+        #result {
+            margin-top: 30px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f0f7ff 0%, #f5edff 100%);
+            border-left: 6px solid #667eea;
+            border-radius: 12px;
+            font-weight: 600;
+            color: #333;
+            font-size: 15px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            line-height: 1.8;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+            animation: slideIn 0.4s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #result div {
+            margin: 8px 0;
+        }
+        
+        #result strong {
+            color: #667eea;
+            font-weight: 700;
+        }
+        
+        #result:empty {
+            display: none;
+        }
+        
+        .result-summary {
+            border-top: 2px solid rgba(102, 126, 234, 0.3);
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+        
+        .final-amount {
+            font-size: 22px !important;
+            color: #667eea !important;
+            font-weight: 700 !important;
+            margin-top: 15px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Banking Interest Calculator</h1>
+
+        <div class="form-group">
+            <label for="accountType">Account Type:</label>
+            <select id="accountType">
+                <option value="savings">Savings (4% p.a.)</option>
+                <option value="fixed">Fixed Deposit (6.5% p.a.)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Amount (₹):</label>
+            <input id="amount" type="number" step="0.01" value="100000" />
+        </div>
+
+        <div class="form-group">
+            <label for="years">Years:</label>
+            <input id="years" type="number" step="1" value="1" />
+        </div>
+
+        <button id="calc">Calculate</button>
+
+        <div id="result" aria-live="polite"></div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

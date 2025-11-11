@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en">
+<!DOCTYPE html>
+
+
+
+<head>
+    <html lang="en">
+
+    <meta charset="UTF-8">
+    <html lang="en">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banking Interest Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<head>
+
+
+
+    <body>
+
+        <head>
+
+            <div class="container">
+
+                <div class="header">
+                    <meta charset="UTF-8">
+
+                    <h1>🏦 Banking Interest Calculator</h1>
+                    <meta charset="UTF-8">
+
+                    <p class="subtitle">Calculate your compound interest earnings</p>
+
+                </div>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                <form class="calculator-form" onsubmit="calculateInterest(event)">
+
+                    <div class="form-group">
+                        <title>Banking Interest Calculator</title>
+
+                        <label for="accountType">Account Type</label>
+                        <title>Banking Interest Calculator</title>
+
+                        <select id="accountType" required>
+
+                    <option value="">-- Select Account Type --</option>        <link rel="stylesheet" href="styles.css">
+
+                    <option value="savings">Savings Account (4% p.a.)</option>        <link rel="stylesheet" href="styles.css">
+
+                    <option value="fixed">Fixed Deposit (6.5% p.a.)</option>
+
+                </select> </head>
+
+        </div>
+</head>
+
+
+
+<div class="form-group">
+
+    <label for="amount">Principal Amount (₹)</label>
+
+    <input type="number" id="amount" placeholder="Enter amount" min="1" step="1" required>
+
+    <body>
+
+        <small class="helper-text">💡 Bonus: +1% interest if amount > ₹1,00,000</small>
+
+</div>
+
+<body>
+
+
+
+    <div class="form-group">
+        <div class="container">
+
+            <label for="years">Investment Period (Years)</label>
+            <div class="container">
+
+                <input type="number" id="years" placeholder="Enter years" min="1" max="50" step="1" required>
+
+            </div>
+            <div class="header">
+
+                <div class="header">
+
+                    <button type="submit" class="btn-calculate">Calculate Interest</button>
+
+                    </form>
+                    <h1>🏦 Banking Interest Calculator</h1>
+
+                    <h1>🏦 Banking Interest Calculator</h1>
+
+                    <div class="results-section" id="resultsSection" style="display: none;">
+
+                        <div class="results-card">
+                            <p class="subtitle">Calculate your compound interest earnings</p>
+
+                            <h2>📊 Calculation Results</h2>
+                            <p class="subtitle">Calculate your compound interest earnings</p>
+
+
+
+                            <div class="results-grid"> </div>
+
+                            <div class="result-item"> </div>
+
+                            <span class="label">Account Type:</span>
+
+                            <span class="value" id="resultAccountType">-</span>
+
+                        </div>
+
+                        <form class="calculator-form" onsubmit="calculateInterest(event)">
+
+                            <div class="result-item">
+                                <form class="calculator-form" onsubmit="calculateInterest(event)">
+
+                                    <span class="label">Principal Amount:</span>
+
+                                    <span class="value" id="resultPrincipal">-</span>
+                                    <div class="form-group">
+
+                                    </div>
+                                    <div class="form-group">
+
+
+
+                                        <div class="result-item"> <label for="accountType">Account Type</label> <label for="accountType">Account Type</label>
+
+                                            <span class="label">Investment Period:</span>
+
+                                            <span class="value" id="resultYears">-</span> <select id="accountType" required>                <select id="accountType" required>
+
+                    </div>
+
+                    <option value="">-- Select Account Type --</option>                    <option value="">-- Select Account Type --</option>
+
+                    <div class="result-item">
+
+                        <span class="label">Base Interest Rate:</span>                    <option value="savings">Savings Account (4% p.a.)</option>                    <option value="savings">Savings Account (4% p.a.)</option>
+
+                        <span class="value" id="resultBaseRate">-</span>
+
+                    </div>                    <option value="fixed">Fixed Deposit (6.5% p.a.)</option>                    <option value="fixed">Fixed Deposit (6.5% p.a.)</option>
+
+
+
+                    <div class="result-item">                </select> </select>
+
+                                            <span class="label">Bonus Rate:</span>
+
+                                            <span class="value bonus" id="resultBonusRate">-</span> </div>
+
+                                    </div>
+                            </div>
+
+
+
+                            <div class="result-item">
+
+                                <span class="label">Effective Rate:</span>
+
+                                <span class="value highlight" id="resultEffectiveRate">-</span>
+                                <div class="form-group">
+
+                                </div>
+                                <div class="form-group">
+
+                                </div>
+
+                                <label for="amount">Principal Amount (₹)</label> <label for="amount">Principal Amount (₹)</label>
+
+                                <div class="divider"></div>
+
+                                <input type="number" id="amount" placeholder="Enter amount" min="1" step="1" required> <input type="number" id="amount" placeholder="Enter amount" min="1" step="1" required>
+
+                                <div class="final-results">
+
+                                    <div class="final-item"> <small class="helper-text">💡 Bonus: +1% interest if amount > ₹1,00,000</small> <small class="helper-text">💡 Bonus: +1% interest if amount > ₹1,00,000</small>
+
+                                        <span class="label">Interest Earned:</span>
+
+                                        <span class="value interest" id="resultInterestEarned">-</span> </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="final-item total">
+
+                                <span class="label">Final Balance:</span>
+
+                                <span class="value final-balance" id="resultFinalBalance">-</span>
+                                <div class="form-group">
+
+                                </div>
+                                <div class="form-group">
+
+                                </div>
+
+                            </div> <label for="years">Investment Period (Years)</label> <label for="years">Investment Period (Years)</label>
+
+
+
+                            <div class="console-output" id="consoleOutput"> <input type="number" id="years" placeholder="Enter years" min="1" max="50" step="1" required> <input type="number" id="years" placeholder="Enter years" min="1" max="50" step="1" required>
+
+                                <h3>📋 Calculation Log</h3>
+
+                                <div class="log-content" id="logContent"></div>
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="info-section">
+
+                <h3>📚 How It Works</h3> <button type="submit" class="btn-calculate">Calculate Interest</button> <button type="submit" class="btn-calculate">Calculate Interest</button>
+
+                <div class="info-grid">
+
+                    <div class="info-card">
+                        </form>
+
+                        <h4>💳 Savings Account</h4>
+                        </form>
+
+                        <p>4% annual interest rate on your savings</p>
+
+                    </div>
+
+                    <div class="info-card">
+
+                        <h4>📈 Fixed Deposit</h4>
+                        <div class="results-section" id="resultsSection" style="display: none;">
+
+                            <p>6.5% annual interest rate for locked period</p>
+                            <div class="results-section" id="resultsSection" style="display: none;">
+
+                            </div>
+
+                            <div class="info-card">
+                                <div class="results-card">
+
+                                    <h4>🎁 Bonus Interest</h4>
+                                    <div class="results-card">
+
+                                        <p>+1% extra for deposits above ₹1,00,000</p>
+
+                                    </div>
+                                    <h2>📊 Calculation Results</h2>
+
+                                    <div class="info-card">
+                                        <h2>📊 Calculation Results</h2>
+
+                                        <h4>🔗 Compound Interest</h4>
+
+                                        <p>Formula: Amount × (1 + Rate/100)^Years</p>
+
+                                    </div>
+
+                                </div>
+                                <div class="results-grid">
+
+                                </div>
+                                <div class="results-grid">
+
+                                </div>
+
+                                <div class="result-item">
+
+                                    <script src="script.js"></script>
+                                    <div class="result-item">
+
+</body>
+
+<span class="label">Account Type:</span> <span class="label">Account Type:</span>
+
+</html>
+
+<span class="value" id="resultAccountType">-</span> <span class="value" id="resultAccountType">-</span>
+
+</div>
+</div>
+
+
+
+<div class="result-item">
+    <div class="result-item">
+
+        <span class="label">Principal Amount:</span> <span class="label">Principal Amount:</span>
+
+        <span class="value" id="resultPrincipal">-</span> <span class="value" id="resultPrincipal">-</span>
+
+    </div>
+</div>
+
+
+
+<div class="result-item">
+    <div class="result-item">
+
+        <span class="label">Investment Period:</span> <span class="label">Investment Period:</span>
+
+        <span class="value" id="resultYears">-</span> <span class="value" id="resultYears">-</span>
+
+    </div>
+</div>
+
+
+
+<div class="result-item">
+    <div class="result-item">
+
+        <span class="label">Base Interest Rate:</span> <span class="label">Base Interest Rate:</span>
+
+        <span class="value" id="resultBaseRate">-</span> <span class="value" id="resultBaseRate">-</span>
+
+    </div>
+</div>
+
+
+
+<div class="result-item">
+    <div class="result-item">
+
+        <span class="label">Bonus Rate:</span> <span class="label">Bonus Rate:</span>
+
+        <span class="value bonus" id="resultBonusRate">-</span> <span class="value bonus" id="resultBonusRate">-</span>
+
+    </div>
+</div>
+
+
+
+<div class="result-item">
+    <div class="result-item">
+
+        <span class="label">Effective Rate:</span> <span class="label">Effective Rate:</span>
+
+        <span class="value highlight" id="resultEffectiveRate">-</span> <span class="value highlight" id="resultEffectiveRate">-</span>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="divider"></div>
+<div class="divider"></div>
+
+
+
+<div class="final-results">
+    <div class="final-results">
+
+        <div class="final-item">
+            <div class="final-item">
+
+                <span class="label">Interest Earned:</span> <span class="label">Interest Earned:</span>
+
+                <span class="value interest" id="resultInterestEarned">-</span> <span class="value interest" id="resultInterestEarned">-</span>
+
+            </div>
+        </div>
+
+
+
+        <div class="final-item total">
+            <div class="final-item total">
+
+                <span class="label">Final Balance:</span> <span class="label">Final Balance:</span>
+
+                <span class="value final-balance" id="resultFinalBalance">-</span> <span class="value final-balance" id="resultFinalBalance">-</span>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="console-output" id="consoleOutput">
+    <div class="console-output" id="consoleOutput">
+
+        <h3>📋 Calculation Log</h3>
+        <h3>📋 Calculation Log</h3>
+
+        <div class="log-content" id="logContent"></div>
+        <div class="log-content" id="logContent"></div>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="info-section">
+    <div class="info-section">
+
+        <h3>📚 How It Works</h3>
+        <h3>📚 How It Works</h3>
+
+        <div class="info-grid">
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <div class="info-card">
+
+                        <h4>💳 Savings Account</h4>
+                        <h4>💳 Savings Account</h4>
+
+                        <p>4% annual interest rate on your savings</p>
+                        <p>4% annual interest rate on your savings</p>
+
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card">
+
+                        <h4>📈 Fixed Deposit</h4>
+                        <h4>📈 Fixed Deposit</h4>
+
+                        <p>6.5% annual interest rate for locked period</p>
+                        <p>6.5% annual interest rate for locked period</p>
+
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card">
+
+                        <h4>🎁 Bonus Interest</h4>
+                        <h4>🎁 Bonus Interest</h4>
+
+                        <p>+1% extra for deposits above ₹1,00,000</p>
+                        <p>+1% extra for deposits above ₹1,00,000</p>
+
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-card">
+
+                        <h4>🔗 Compound Interest</h4>
+                        <h4>🔗 Compound Interest</h4>
+
+                        <p>Formula: Amount × (1 + Rate/100)^Years</p>
+                        <p>Formula: Amount × (1 + Rate/100)^Years</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+
+
+<script src="script.js"></script>
+<script src="script.js"></script>
+
+</body>
+</body>
+
+
+
+</html>
+
+</html>
+
+if (normalizedType === "savings") { return SAVINGS_RATE; } else if (normalizedType === "fixed") { return FIXED_DEPOSIT_RATE; } return 0; } /** * Function: isBonusEligible() * Determines if the deposit amount qualifies for bonus interest */ function isBonusEligible(depositAmount)
+{ return depositAmount > BONUS_THRESHOLD; } /** * Function: calculateEffectiveRate() * Calculates the total effective annual interest rate */ function calculateEffectiveRate(type, depositAmount) { let effectiveRate = getBaseInterestRate(type); if (isBonusEligible(depositAmount))
+{ effectiveRate += BONUS_RATE; } return effectiveRate; } /** * Function: calculateFinalBalance() * Computes the final balance after compound interest */ function calculateFinalBalance(principal, effectiveRate, investmentYears) { const finalBalance = principal
+* Math.pow((1 + effectiveRate / 100), investmentYears); return parseFloat(finalBalance.toFixed(2)); } /** * Function: calculateInterestEarned() * Calculates the total interest earned */ function calculateInterestEarned(finalBalance, principal) { return
+parseFloat((finalBalance - principal).toFixed(2)); } /** * Function: formatCurrency() * Formats a number as Indian Rupees */ function formatCurrency(value) { return "₹" + parseFloat(value).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits:
+2 }); } /** * Function: addLog() * Adds a line to the calculation log */ function addLog(message) { const logContent = document.getElementById("logContent"); const logLine = document.createElement("p"); logLine.innerHTML = message; logContent.appendChild(logLine);
+} /** * Function: calculateInterest() * Main calculator function triggered on form submission */ function calculateInterest(event) { event.preventDefault(); // Get input values const accountType = document.getElementById("accountType").value; const amount
+= parseFloat(document.getElementById("amount").value); const years = parseInt(document.getElementById("years").value); // Clear previous results document.getElementById("logContent").innerHTML = ""; // Log calculation details addLog(`
+<span class="info">⏰ Calculation initiated...</span>`); addLog(`Account Type: ${accountType.charAt(0).toUpperCase() + accountType.slice(1)}`); addLog(`Principal Amount: ${formatCurrency(amount)}`); addLog(`Investment Period: ${years} year${years !== 1
+? "s" : ""}`); // Calculate effective rate const baseRate = getBaseInterestRate(accountType); const isEligible = isBonusEligible(amount); const effectiveRate = calculateEffectiveRate(accountType, amount); addLog(`
+
+<span class="info">--- Interest Rate Breakdown ---</span>`); addLog(`Base Rate: ${baseRate}%`); if (isEligible) { addLog(`
+<span class="bonus">Bonus Applied: +${BONUS_RATE}% (Amount > ₹1,00,000)</span>`); addLog(`
+<span class="highlight">Effective Rate: ${effectiveRate}%</span>`); } else { addLog(`Effective Rate: ${effectiveRate}%`); } // Calculate final balance and interest const finalBalance = calculateFinalBalance(amount, effectiveRate, years); const interestEarned
+= calculateInterestEarned(finalBalance, amount); addLog(`
+
+<span class="info">--- Compound Interest Formula ---</span>`); addLog(`Total = Amount × (1 + Rate/100)^Years`); addLog(`Total = ${formatCurrency(amount)} × (1 + ${effectiveRate}/100)^${years}`); addLog(`
+<span class="success">Total = ${formatCurrency(finalBalance)}</span>`); // Display results document.getElementById("resultAccountType").textContent = accountType.charAt(0).toUpperCase() + accountType.slice(1); document.getElementById("resultPrincipal").textContent
+= formatCurrency(amount); document.getElementById("resultYears").textContent = years + " year" + (years !== 1 ? "s" : ""); document.getElementById("resultBaseRate").textContent = baseRate + "%"; document.getElementById("resultBonusRate").textContent =
+isEligible ? `+${BONUS_RATE}%` : "None"; document.getElementById("resultEffectiveRate").textContent = effectiveRate + "%"; document.getElementById("resultInterestEarned").textContent = formatCurrency(interestEarned); document.getElementById("resultFinalBalance").textContent
+= formatCurrency(finalBalance); // Show results section document.getElementById("resultsSection").style.display = "block"; // Scroll to results setTimeout(() => { document.getElementById("resultsSection").scrollIntoView({ behavior: "smooth" }); }, 100);
+} // Allow Enter key to submit document.addEventListener("DOMContentLoaded", function() { document.getElementById("years").addEventListener("keypress", function(e) { if (e.key === "Enter") { document.querySelector(".btn-calculate").click(); } }); });
+</script>
+</body>
+
+</html>
