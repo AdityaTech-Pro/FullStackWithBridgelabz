@@ -1,0 +1,33 @@
+{
+    "products": [{
+            "id": 1,
+            "name": "Wireless Earbuds",
+            "price": 1499,
+            "image": "https://via.placeholder.com/80?text=Earbuds"
+        },
+        {
+            "id": 2,
+            "name": "Gaming Mouse",
+            "price": 999,
+            "image": "https://via.placeholder.com/80?text=Mouse"
+        },
+        {
+            "id": 3,
+            "name": "Mechanical Keyboard",
+            "price": 2499,
+            "image": "https://via.placeholder.com/80?text=Keyboard"
+        },
+        {
+            "id": 4,
+            "name": "Smart Watch",
+            "price": 2999,
+            "image": "https://via.placeholder.com/80?text=Watch"
+        },
+        {
+            "id": 5,
+            "name": "Bluetooth Speaker",
+            "price": 1299,
+            "image": "https://via.placeholder.com/80?text=Speaker"
+        }
+    ]
+}
