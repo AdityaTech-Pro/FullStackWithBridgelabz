@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page Greeting</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Link external JS -->
+    <script src="script.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header,
+        main,
+        footer {
+            margin-bottom: 20px;
+        }
+        
+        #greeting {
+            font-size: 28px;
+            color: #333;
+            cursor: pointer;
+        }
+        
+        #welcomeMessage {
+            font-size: 20px;
+            color: #555;
+            margin-top: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background: #007bff;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome Page Greeting</h1>
+    </header>
+
+    <main>
+        <!-- Dynamic Greeting -->
+        <h2 id="greeting"></h2>
+
+        <!-- Welcome message -->
+        <p id="welcomeMessage">We are happy to have you here! Enjoy exploring our page.</p>
+
+        <!-- Buttons -->
+        <button id="changeGreetingBtn">Change Greeting</button>
+        <button id="toggleWelcomeBtn">Toggle Welcome Message</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Demo Website</p>
+    </footer>
+
+</body>
+
+</html>
